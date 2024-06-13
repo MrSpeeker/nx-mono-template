@@ -8,12 +8,16 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/mono-template",
         "index": "apps/mono-template/src/index.html",
         "browser": "apps/mono-template/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/mono-template/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -22,7 +26,11 @@
             "input": "apps/mono-template/public"
           }
         ],
-        "styles": ["apps/mono-template/src/styles.scss"],
+        "styles": [
+          "apps/mono-template/src/styles.scss",
+          "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -72,7 +80,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/mono-template/jest.config.ts"
       }
