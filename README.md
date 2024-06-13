@@ -60,3 +60,15 @@ It will show tasks that you can run with Nx.
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+## How to setup PrimeNG in project
+
+- yarn add primeng primeicons
+- Add the following to the project.json:
+  ```
+  "styles": [
+    "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+    "node_modules/primeng/resources/primeng.min.css"
+  ]
+  ```   
+
