@@ -55,6 +55,9 @@ It will show tasks that you can run with Nx.
 
 - [Learn more about Exploring the Project Graph](https://nx.dev/core-features/explore-graph)
 
+## How to make mono repo project
+ - npx create-nx-workspace@latest mono-template --preset=angular-monorepo --package-manager=yarn
+
 ## How to setup PrimeNG in project
 
 - yarn add primeng primeicons
@@ -65,4 +68,7 @@ It will show tasks that you can run with Nx.
     "node_modules/primeng/resources/primeng.min.css"
   ]
   ```   
+  
+
+
 
